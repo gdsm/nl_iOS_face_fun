@@ -1,0 +1,6 @@
+
+target 'FaceFun' do
+    use_frameworks!
+
+    pod 'UICircularProgressRing'
+end

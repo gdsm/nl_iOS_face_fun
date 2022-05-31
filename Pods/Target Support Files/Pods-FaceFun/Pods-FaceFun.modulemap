@@ -1,0 +1,6 @@
+framework module Pods_FaceFun {
+  umbrella header "Pods-FaceFun-umbrella.h"
+
+  export *
+  module * { export * }
+}

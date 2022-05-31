@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C16BD517540DB8C5BEC5C71 /* Pods_FaceFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D8B6312A0F97D8E48AE4C8 /* Pods_FaceFun.framework */; };
+		E640169D24506CAC00DD14F2 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E640169724506CAC00DD14F2 /* launch.png */; };
+		E648F1152486A00400EB47B8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648F0762486A00400EB47B8 /* Logger.swift */; };
+		E648F1252486C5EC00EB47B8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E648F1242486C5EC00EB47B8 /* Accelerate.framework */; };
+		E6B2C8B8245319A100DE1C57 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = E6B2C8B7245319A100DE1C57 /* podfile */; };
+		E6B2C8BC2453275400DE1C57 /* FunImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2C8BB2453275400DE1C57 /* FunImageViewController.swift */; };
+		E6BB417C24471DAD007E01AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB417B24471DAD007E01AE /* AppDelegate.swift */; };
+		E6BB418024471DAD007E01AE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB417F24471DAD007E01AE /* MainViewController.swift */; };
+		E6BB418324471DAD007E01AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BB418124471DAD007E01AE /* Main.storyboard */; };
+		E6BB418524471DAF007E01AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BB418424471DAF007E01AE /* Assets.xcassets */; };
+		E6BB418824471DAF007E01AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BB418624471DAF007E01AE /* LaunchScreen.storyboard */; };
+		E6C5B9452487E70800913144 /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B9442487E70800913144 /* UIImage+Helpers.swift */; };
+		E6C5B9542487E75300913144 /* NeuralClassifierManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B9482487E75200913144 /* NeuralClassifierManager.swift */; };
+		E6C5B9552487E75300913144 /* ClassifierConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B9492487E75200913144 /* ClassifierConfiguration.swift */; };
+		E6C5B9562487E75300913144 /* NeuralCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B94B2487E75200913144 /* NeuralCameraView.swift */; };
+		E6C5B9572487E75300913144 /* NeuralClassifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B94C2487E75200913144 /* NeuralClassifierProtocol.swift */; };
+		E6C5B9582487E75300913144 /* FirebaseFaceClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B94F2487E75200913144 /* FirebaseFaceClassifier.swift */; };
+		E6C5B9592487E75300913144 /* NativeFaceClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B9502487E75200913144 /* NativeFaceClassifier.swift */; };
+		E6C5B95A2487E75300913144 /* ClassifierObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B9512487E75200913144 /* ClassifierObject.swift */; };
+		E6C5B95B2487E75300913144 /* BaseClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B9522487E75200913144 /* BaseClassifier.swift */; };
+		E6C5B95C2487E75300913144 /* ClassifierFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5B9532487E75200913144 /* ClassifierFactory.swift */; };
+		E6C5B9682487E76C00913144 /* FirebaseMLVisionFaceModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C5B95E2487E76C00913144 /* FirebaseMLVisionFaceModel.framework */; };
+		E6C5B9692487E76C00913144 /* GoogleAPIClientForREST.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C5B95F2487E76C00913144 /* GoogleAPIClientForREST.xcframework */; };
+		E6C5B96A2487E76C00913144 /* FirebaseMLVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C5B9602487E76C00913144 /* FirebaseMLVision.framework */; };
+		E6C5B96B2487E76C00913144 /* GoogleMVFaceDetectorResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6C5B9622487E76C00913144 /* GoogleMVFaceDetectorResources.bundle */; };
+		E6C5B96E2487E76C00913144 /* FirebaseMLCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C5B9652487E76C00913144 /* FirebaseMLCommon.framework */; };
+		E6D32C45244CC76100C05262 /* InitViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D32C44244CC76100C05262 /* InitViewcontroller.swift */; };
+		E6D32C56244CCBD800C05262 /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6D32C4D244CCBD800C05262 /* Material-Design-Iconic-Font.ttf */; };
+		E6D32C57244CCBD800C05262 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6D32C4F244CCBD800C05262 /* 4.jpg */; };
+		E6D32C58244CCBD800C05262 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6D32C50244CCBD800C05262 /* 5.jpg */; };
+		E6D32C59244CCBD800C05262 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6D32C51244CCBD800C05262 /* 7.jpg */; };
+		E6D32C5A244CCBD800C05262 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6D32C52244CCBD800C05262 /* 6.jpg */; };
+		E6D32C5B244CCBD800C05262 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6D32C53244CCBD800C05262 /* 2.jpg */; };
+		E6D32C5C244CCBD800C05262 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6D32C54244CCBD800C05262 /* 3.jpg */; };
+		E6D32C5D244CCBD800C05262 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6D32C55244CCBD800C05262 /* 1.jpg */; };
+		E6DD1BBB2483C1EE00A18AEE /* NeuralLabs_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DD1BB22483C1B900A18AEE /* NeuralLabs_iOS.framework */; };
+		E6DD1BBC2483C1EE00A18AEE /* NeuralLabs_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6DD1BB22483C1B900A18AEE /* NeuralLabs_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6FEFAF12451C99100481291 /* AnimalImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEFAF02451C99100481291 /* AnimalImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6DD1BB12483C1B900A18AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6DD1BAD2483C1B900A18AEE /* NeuralLabsFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE2AFFA221CCD10100D8E26D;
+			remoteInfo = "NeuralLabs-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E6BB419824471DDB007E01AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E6DD1BBC2483C1EE00A18AEE /* NeuralLabs_iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		29D8B6312A0F97D8E48AE4C8 /* Pods_FaceFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42948A688A90196D869748B /* Pods-FaceFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceFun.release.xcconfig"; path = "Target Support Files/Pods-FaceFun/Pods-FaceFun.release.xcconfig"; sourceTree = "<group>"; };
+		C3B49C709A8A380A4A2D77CF /* Pods-FaceFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceFun.debug.xcconfig"; path = "Target Support Files/Pods-FaceFun/Pods-FaceFun.debug.xcconfig"; sourceTree = "<group>"; };
+		E640169724506CAC00DD14F2 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		E648F0762486A00400EB47B8 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E648F1202486C14600EB47B8 /* libCTGreenTeaLogger.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libCTGreenTeaLogger.tbd; path = usr/lib/libCTGreenTeaLogger.tbd; sourceTree = SDKROOT; };
+		E648F1242486C5EC00EB47B8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E6B2C8B7245319A100DE1C57 /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E6B2C8BB2453275400DE1C57 /* FunImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunImageViewController.swift; sourceTree = "<group>"; };
+		E6BB417824471DAD007E01AE /* FaceFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BB417B24471DAD007E01AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6BB417F24471DAD007E01AE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E6BB418224471DAD007E01AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6BB418424471DAF007E01AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6BB418724471DAF007E01AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6BB418924471DAF007E01AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6C5B9192487D4A100913144 /* libcryptex_core.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcryptex_core.tbd; path = usr/lib/libcryptex_core.tbd; sourceTree = SDKROOT; };
+		E6C5B91B2487D4A100913144 /* CryptoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoKit.framework; path = System/Library/Frameworks/CryptoKit.framework; sourceTree = SDKROOT; };
+		E6C5B91C2487D4A100913144 /* CryptoTokenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoTokenKit.framework; path = System/Library/Frameworks/CryptoTokenKit.framework; sourceTree = SDKROOT; };
+		E6C5B91D2487D4A100913144 /* libcryptex_development.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcryptex_development.tbd; path = usr/lib/libcryptex_development.tbd; sourceTree = SDKROOT; };
+		E6C5B91E2487D4A200913144 /* libcryptex.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcryptex.tbd; path = usr/lib/libcryptex.tbd; sourceTree = SDKROOT; };
+		E6C5B9442487E70800913144 /* UIImage+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
+		E6C5B9482487E75200913144 /* NeuralClassifierManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralClassifierManager.swift; sourceTree = "<group>"; };
+		E6C5B9492487E75200913144 /* ClassifierConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifierConfiguration.swift; sourceTree = "<group>"; };
+		E6C5B94B2487E75200913144 /* NeuralCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralCameraView.swift; sourceTree = "<group>"; };
+		E6C5B94C2487E75200913144 /* NeuralClassifierProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralClassifierProtocol.swift; sourceTree = "<group>"; };
+		E6C5B94F2487E75200913144 /* FirebaseFaceClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseFaceClassifier.swift; sourceTree = "<group>"; };
+		E6C5B9502487E75200913144 /* NativeFaceClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeFaceClassifier.swift; sourceTree = "<group>"; };
+		E6C5B9512487E75200913144 /* ClassifierObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifierObject.swift; sourceTree = "<group>"; };
+		E6C5B9522487E75200913144 /* BaseClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClassifier.swift; sourceTree = "<group>"; };
+		E6C5B9532487E75200913144 /* ClassifierFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifierFactory.swift; sourceTree = "<group>"; };
+		E6C5B95E2487E76C00913144 /* FirebaseMLVisionFaceModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseMLVisionFaceModel.framework; sourceTree = "<group>"; };
+		E6C5B95F2487E76C00913144 /* GoogleAPIClientForREST.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleAPIClientForREST.xcframework; sourceTree = "<group>"; };
+		E6C5B9602487E76C00913144 /* FirebaseMLVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseMLVision.framework; sourceTree = "<group>"; };
+		E6C5B9622487E76C00913144 /* GoogleMVFaceDetectorResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMVFaceDetectorResources.bundle; sourceTree = "<group>"; };
+		E6C5B9652487E76C00913144 /* FirebaseMLCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseMLCommon.framework; sourceTree = "<group>"; };
+		E6D32C44244CC76100C05262 /* InitViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewcontroller.swift; sourceTree = "<group>"; };
+		E6D32C4D244CCBD800C05262 /* Material-Design-Iconic-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Material-Design-Iconic-Font.ttf"; sourceTree = "<group>"; };
+		E6D32C4F244CCBD800C05262 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		E6D32C50244CCBD800C05262 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		E6D32C51244CCBD800C05262 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		E6D32C52244CCBD800C05262 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		E6D32C53244CCBD800C05262 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		E6D32C54244CCBD800C05262 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		E6D32C55244CCBD800C05262 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		E6DD1BAD2483C1B900A18AEE /* NeuralLabsFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NeuralLabsFramework.xcodeproj; path = ../NeuralFrameworks/NeuralLabs/NeuralLabsFramework.xcodeproj; sourceTree = "<group>"; };
+		E6FEFAF02451C99100481291 /* AnimalImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6BB417524471DAD007E01AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E648F1252486C5EC00EB47B8 /* Accelerate.framework in Frameworks */,
+				E6C5B9682487E76C00913144 /* FirebaseMLVisionFaceModel.framework in Frameworks */,
+				E6C5B96E2487E76C00913144 /* FirebaseMLCommon.framework in Frameworks */,
+				E6DD1BBB2483C1EE00A18AEE /* NeuralLabs_iOS.framework in Frameworks */,
+				E6C5B9692487E76C00913144 /* GoogleAPIClientForREST.xcframework in Frameworks */,
+				E6C5B96A2487E76C00913144 /* FirebaseMLVision.framework in Frameworks */,
+				3C16BD517540DB8C5BEC5C71 /* Pods_FaceFun.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50A392A392FB533C70F2134B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3B49C709A8A380A4A2D77CF /* Pods-FaceFun.debug.xcconfig */,
+				B42948A688A90196D869748B /* Pods-FaceFun.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E648EFB02486A00300EB47B8 /* NL-Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B9432487E70800913144 /* Extenstions */,
+				E648F0752486A00400EB47B8 /* Logging */,
+			);
+			name = "NL-Shared";
+			path = "../NeuralFrameworks/NL-Shared";
+			sourceTree = "<group>";
+		};
+		E648F0752486A00400EB47B8 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				E648F0762486A00400EB47B8 /* Logger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		E6BB416F24471DAD007E01AE = {
+			isa = PBXGroup;
+			children = (
+				E6C5B9462487E72600913144 /* FaceML */,
+				E648EFB02486A00300EB47B8 /* NL-Shared */,
+				E6B2C8B7245319A100DE1C57 /* podfile */,
+				E6DD1BAD2483C1B900A18AEE /* NeuralLabsFramework.xcodeproj */,
+				E6D32C4E244CCBD800C05262 /* Animal Images */,
+				E6D32C4C244CCBD800C05262 /* Font */,
+				E6BB417A24471DAD007E01AE /* FaceFun */,
+				E6BB417924471DAD007E01AE /* Products */,
+				E6BB419524471DDB007E01AE /* Frameworks */,
+				50A392A392FB533C70F2134B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E6BB417924471DAD007E01AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6BB417824471DAD007E01AE /* FaceFun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6BB417A24471DAD007E01AE /* FaceFun */ = {
+			isa = PBXGroup;
+			children = (
+				E640169724506CAC00DD14F2 /* launch.png */,
+				E6BB417B24471DAD007E01AE /* AppDelegate.swift */,
+				E6BB417F24471DAD007E01AE /* MainViewController.swift */,
+				E6BB418124471DAD007E01AE /* Main.storyboard */,
+				E6BB418424471DAF007E01AE /* Assets.xcassets */,
+				E6BB418624471DAF007E01AE /* LaunchScreen.storyboard */,
+				E6BB418924471DAF007E01AE /* Info.plist */,
+				E6D32C44244CC76100C05262 /* InitViewcontroller.swift */,
+				E6FEFAF02451C99100481291 /* AnimalImageView.swift */,
+				E6B2C8BB2453275400DE1C57 /* FunImageViewController.swift */,
+			);
+			path = FaceFun;
+			sourceTree = "<group>";
+		};
+		E6BB419524471DDB007E01AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B91B2487D4A100913144 /* CryptoKit.framework */,
+				E6C5B91C2487D4A100913144 /* CryptoTokenKit.framework */,
+				E6C5B9192487D4A100913144 /* libcryptex_core.tbd */,
+				E6C5B91D2487D4A100913144 /* libcryptex_development.tbd */,
+				E6C5B91E2487D4A200913144 /* libcryptex.tbd */,
+				E648F1242486C5EC00EB47B8 /* Accelerate.framework */,
+				E648F1202486C14600EB47B8 /* libCTGreenTeaLogger.tbd */,
+				29D8B6312A0F97D8E48AE4C8 /* Pods_FaceFun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6C5B9432487E70800913144 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B9442487E70800913144 /* UIImage+Helpers.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		E6C5B9462487E72600913144 /* FaceML */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B95D2487E76C00913144 /* MLVisionFaceModel */,
+				E6C5B9472487E75200913144 /* ML-Shared */,
+			);
+			name = FaceML;
+			sourceTree = "<group>";
+		};
+		E6C5B9472487E75200913144 /* ML-Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B9482487E75200913144 /* NeuralClassifierManager.swift */,
+				E6C5B9492487E75200913144 /* ClassifierConfiguration.swift */,
+				E6C5B94A2487E75200913144 /* SourceViews */,
+				E6C5B94C2487E75200913144 /* NeuralClassifierProtocol.swift */,
+				E6C5B94D2487E75200913144 /* Classifiers */,
+			);
+			name = "ML-Shared";
+			path = "../NeuralFrameworks/NeuralML/ML-Shared";
+			sourceTree = "<group>";
+		};
+		E6C5B94A2487E75200913144 /* SourceViews */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B94B2487E75200913144 /* NeuralCameraView.swift */,
+			);
+			path = SourceViews;
+			sourceTree = "<group>";
+		};
+		E6C5B94D2487E75200913144 /* Classifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B94E2487E75200913144 /* Face */,
+				E6C5B9512487E75200913144 /* ClassifierObject.swift */,
+				E6C5B9522487E75200913144 /* BaseClassifier.swift */,
+				E6C5B9532487E75200913144 /* ClassifierFactory.swift */,
+			);
+			path = Classifiers;
+			sourceTree = "<group>";
+		};
+		E6C5B94E2487E75200913144 /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B94F2487E75200913144 /* FirebaseFaceClassifier.swift */,
+				E6C5B9502487E75200913144 /* NativeFaceClassifier.swift */,
+			);
+			path = Face;
+			sourceTree = "<group>";
+		};
+		E6C5B95D2487E76C00913144 /* MLVisionFaceModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B95E2487E76C00913144 /* FirebaseMLVisionFaceModel.framework */,
+				E6C5B95F2487E76C00913144 /* GoogleAPIClientForREST.xcframework */,
+				E6C5B9602487E76C00913144 /* FirebaseMLVision.framework */,
+				E6C5B9612487E76C00913144 /* Resources */,
+				E6C5B9652487E76C00913144 /* FirebaseMLCommon.framework */,
+			);
+			name = MLVisionFaceModel;
+			path = "../NeuralFrameworks/NL-Shared/Frameworks/Firebase/MLVisionFaceModel";
+			sourceTree = "<group>";
+		};
+		E6C5B9612487E76C00913144 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5B9622487E76C00913144 /* GoogleMVFaceDetectorResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E6D32C4C244CCBD800C05262 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E6D32C4D244CCBD800C05262 /* Material-Design-Iconic-Font.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E6D32C4E244CCBD800C05262 /* Animal Images */ = {
+			isa = PBXGroup;
+			children = (
+				E6D32C4F244CCBD800C05262 /* 4.jpg */,
+				E6D32C50244CCBD800C05262 /* 5.jpg */,
+				E6D32C51244CCBD800C05262 /* 7.jpg */,
+				E6D32C52244CCBD800C05262 /* 6.jpg */,
+				E6D32C53244CCBD800C05262 /* 2.jpg */,
+				E6D32C54244CCBD800C05262 /* 3.jpg */,
+				E6D32C55244CCBD800C05262 /* 1.jpg */,
+			);
+			path = "Animal Images";
+			sourceTree = "<group>";
+		};
+		E6DD1BAE2483C1B900A18AEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6DD1BB22483C1B900A18AEE /* NeuralLabs_iOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6BB417724471DAD007E01AE /* FaceFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BB418C24471DAF007E01AE /* Build configuration list for PBXNativeTarget "FaceFun" */;
+			buildPhases = (
+				1257720975B87412C88A6339 /* [CP] Check Pods Manifest.lock */,
+				E6BB417424471DAD007E01AE /* Sources */,
+				E6BB417524471DAD007E01AE /* Frameworks */,
+				E6BB417624471DAD007E01AE /* Resources */,
+				E6BB419824471DDB007E01AE /* Embed Frameworks */,
+				B0FAE3E6ECF934B8FF88A163 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceFun;
+			productName = FaceFun;
+			productReference = E6BB417824471DAD007E01AE /* FaceFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6BB417024471DAD007E01AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Gagandeep Singh Madan";
+				TargetAttributes = {
+					E6BB417724471DAD007E01AE = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = E6BB417324471DAD007E01AE /* Build configuration list for PBXProject "FaceFun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6BB416F24471DAD007E01AE;
+			productRefGroup = E6BB417924471DAD007E01AE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E6DD1BAE2483C1B900A18AEE /* Products */;
+					ProjectRef = E6DD1BAD2483C1B900A18AEE /* NeuralLabsFramework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E6BB417724471DAD007E01AE /* FaceFun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E6DD1BB22483C1B900A18AEE /* NeuralLabs_iOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NeuralLabs_iOS.framework;
+			remoteRef = E6DD1BB12483C1B900A18AEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6BB417624471DAD007E01AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E640169D24506CAC00DD14F2 /* launch.png in Resources */,
+				E6D32C5D244CCBD800C05262 /* 1.jpg in Resources */,
+				E6C5B96B2487E76C00913144 /* GoogleMVFaceDetectorResources.bundle in Resources */,
+				E6BB418824471DAF007E01AE /* LaunchScreen.storyboard in Resources */,
+				E6B2C8B8245319A100DE1C57 /* podfile in Resources */,
+				E6BB418524471DAF007E01AE /* Assets.xcassets in Resources */,
+				E6D32C5A244CCBD800C05262 /* 6.jpg in Resources */,
+				E6D32C5B244CCBD800C05262 /* 2.jpg in Resources */,
+				E6BB418324471DAD007E01AE /* Main.storyboard in Resources */,
+				E6D32C5C244CCBD800C05262 /* 3.jpg in Resources */,
+				E6D32C59244CCBD800C05262 /* 7.jpg in Resources */,
+				E6D32C58244CCBD800C05262 /* 5.jpg in Resources */,
+				E6D32C57244CCBD800C05262 /* 4.jpg in Resources */,
+				E6D32C56244CCBD800C05262 /* Material-Design-Iconic-Font.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1257720975B87412C88A6339 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceFun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0FAE3E6ECF934B8FF88A163 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceFun/Pods-FaceFun-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceFun/Pods-FaceFun-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceFun/Pods-FaceFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6BB417424471DAD007E01AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C5B9572487E75300913144 /* NeuralClassifierProtocol.swift in Sources */,
+				E6C5B9562487E75300913144 /* NeuralCameraView.swift in Sources */,
+				E6BB418024471DAD007E01AE /* MainViewController.swift in Sources */,
+				E6FEFAF12451C99100481291 /* AnimalImageView.swift in Sources */,
+				E6D32C45244CC76100C05262 /* InitViewcontroller.swift in Sources */,
+				E6C5B9452487E70800913144 /* UIImage+Helpers.swift in Sources */,
+				E6C5B9552487E75300913144 /* ClassifierConfiguration.swift in Sources */,
+				E6C5B95A2487E75300913144 /* ClassifierObject.swift in Sources */,
+				E648F1152486A00400EB47B8 /* Logger.swift in Sources */,
+				E6C5B95B2487E75300913144 /* BaseClassifier.swift in Sources */,
+				E6C5B9592487E75300913144 /* NativeFaceClassifier.swift in Sources */,
+				E6C5B9582487E75300913144 /* FirebaseFaceClassifier.swift in Sources */,
+				E6B2C8BC2453275400DE1C57 /* FunImageViewController.swift in Sources */,
+				E6BB417C24471DAD007E01AE /* AppDelegate.swift in Sources */,
+				E6C5B9542487E75300913144 /* NeuralClassifierManager.swift in Sources */,
+				E6C5B95C2487E75300913144 /* ClassifierFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E6BB418124471DAD007E01AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6BB418224471DAD007E01AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6BB418624471DAF007E01AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6BB418724471DAF007E01AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6BB418A24471DAF007E01AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6BB418B24471DAF007E01AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6BB418D24471DAF007E01AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B49C709A8A380A4A2D77CF /* Pods-FaceFun.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = U6T9BBGFE9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../NeuralFrameworks/NL-Shared/Frameworks/Firebase/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/UICircularProgressRing\"",
+				);
+				INFOPLIST_FILE = FaceFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LIbraries",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neural.hibiscus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6BB418E24471DAF007E01AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B42948A688A90196D869748B /* Pods-FaceFun.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = U6T9BBGFE9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../NeuralFrameworks/NL-Shared/Frameworks/Firebase/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/UICircularProgressRing\"",
+				);
+				INFOPLIST_FILE = FaceFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LIbraries",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neural.hibiscus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6BB417324471DAD007E01AE /* Build configuration list for PBXProject "FaceFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BB418A24471DAF007E01AE /* Debug */,
+				E6BB418B24471DAF007E01AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6BB418C24471DAF007E01AE /* Build configuration list for PBXNativeTarget "FaceFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BB418D24471DAF007E01AE /* Debug */,
+				E6BB418E24471DAF007E01AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6BB417024471DAD007E01AE /* Project object */;
+}

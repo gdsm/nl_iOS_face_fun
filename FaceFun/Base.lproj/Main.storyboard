@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0BD-sR-RHY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Init Viewcontroller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InitViewcontroller" customModule="FaceFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lq7-HW-KyW"/>
+                    <connections>
+                        <segue destination="Xph-Qu-4VV" kind="show" identifier="InitToMainSegue" id="8gv-vS-Em4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="3lD-DO-jqD">
+            <objects>
+                <viewController id="Xph-Qu-4VV" customClass="MainViewController" customModule="FaceFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CVQ-05-o5G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqp-Ix-Jga" customClass="NeuralIconButton" customModule="NeuralLabs_iOS">
+                                <rect key="frame" x="10" y="44" width="40" height="40"/>
+                                <color key="backgroundColor" name="34495e"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Zjs-g3-lSm"/>
+                                    <constraint firstAttribute="width" constant="40" id="Zs6-f6-0VJ"/>
+                                </constraints>
+                                <state key="normal" title="B"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCommonButtonTap:" destination="Xph-Qu-4VV" eventType="touchUpInside" id="2i3-Qh-UE6"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reo-jW-8Vx">
+                                <rect key="frame" x="157" y="642" width="100" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T79-MD-GyR" customClass="UICircularTimerRing" customModule="UICircularProgressRing">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIf-87-UYS" customClass="NeuralIconButton" customModule="NeuralLabs_iOS">
+                                        <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="P"/>
+                                        <connections>
+                                            <action selector="onBtn:" destination="Xph-Qu-4VV" eventType="touchUpInside" id="oaD-01-XSe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WIf-87-UYS" firstAttribute="leading" secondItem="reo-jW-8Vx" secondAttribute="leading" constant="20" id="CXX-2C-Sld"/>
+                                    <constraint firstItem="WIf-87-UYS" firstAttribute="top" secondItem="reo-jW-8Vx" secondAttribute="top" constant="20" id="DON-Ro-sdS"/>
+                                    <constraint firstItem="T79-MD-GyR" firstAttribute="leading" secondItem="reo-jW-8Vx" secondAttribute="leading" id="FH4-N5-ngS"/>
+                                    <constraint firstAttribute="trailing" secondItem="WIf-87-UYS" secondAttribute="trailing" constant="20" id="Lm5-Mo-Z36"/>
+                                    <constraint firstAttribute="width" constant="100" id="Ol1-3D-GSQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="T79-MD-GyR" secondAttribute="bottom" id="cKU-2Z-i4C"/>
+                                    <constraint firstAttribute="bottom" secondItem="WIf-87-UYS" secondAttribute="bottom" constant="20" id="cOf-PG-8xF"/>
+                                    <constraint firstAttribute="height" constant="100" id="mhe-5k-1Lc"/>
+                                    <constraint firstItem="T79-MD-GyR" firstAttribute="top" secondItem="reo-jW-8Vx" secondAttribute="top" id="ndz-tc-dy2"/>
+                                    <constraint firstAttribute="trailing" secondItem="T79-MD-GyR" secondAttribute="trailing" id="piz-lV-qML"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="reo-jW-8Vx" firstAttribute="centerX" secondItem="CVQ-05-o5G" secondAttribute="centerX" id="5Jz-JT-CIL"/>
+                            <constraint firstItem="Sqp-Ix-Jga" firstAttribute="leading" secondItem="elT-gz-IOX" secondAttribute="leading" constant="10" id="CtT-Qj-Gk2"/>
+                            <constraint firstItem="Sqp-Ix-Jga" firstAttribute="top" secondItem="elT-gz-IOX" secondAttribute="top" id="Jbm-In-u0U"/>
+                            <constraint firstItem="elT-gz-IOX" firstAttribute="bottom" secondItem="reo-jW-8Vx" secondAttribute="bottom" constant="120" id="LXQ-hw-Fa9"/>
+                            <constraint firstItem="elT-gz-IOX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sqp-Ix-Jga" secondAttribute="trailing" symbolic="YES" id="f65-U1-S6N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="elT-gz-IOX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vg8-lV-CV3"/>
+                    <connections>
+                        <outlet property="backButton" destination="Sqp-Ix-Jga" id="fT5-5A-KUq"/>
+                        <outlet property="btnPlayPause" destination="WIf-87-UYS" id="esR-Te-hr1"/>
+                        <outlet property="timerRing" destination="T79-MD-GyR" id="dUv-17-pMk"/>
+                        <outlet property="viewBase" destination="reo-jW-8Vx" id="h03-co-duu"/>
+                        <segue destination="oIO-zt-MfG" kind="show" identifier="funImageSegue" id="F3s-mJ-9KV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6e-60-yZz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1941" y="110"/>
+        </scene>
+        <!--Fun Image View Controller-->
+        <scene sceneID="5lp-Dm-mU9">
+            <objects>
+                <viewController id="oIO-zt-MfG" customClass="FunImageViewController" customModule="FaceFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C11-kF-vnO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4wE-mf-rdw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW4-1X-UKx" customClass="NeuralIconButton" customModule="NeuralLabs_iOS">
+                                <rect key="frame" x="364" y="54" width="40" height="40"/>
+                                <color key="backgroundColor" name="d35400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Yz1-tJ-64M"/>
+                                    <constraint firstAttribute="height" constant="40" id="p75-jB-fDs"/>
+                                </constraints>
+                                <state key="normal" title="S"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onBtnShare:" destination="oIO-zt-MfG" eventType="touchUpInside" id="Kez-dT-WNG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQL-o1-qDg" customClass="NeuralIconButton" customModule="NeuralLabs_iOS">
+                                <rect key="frame" x="10" y="44" width="40" height="40"/>
+                                <color key="backgroundColor" name="34495e"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="qDH-Y4-lk4"/>
+                                    <constraint firstAttribute="height" constant="40" id="rpz-Fz-MOU"/>
+                                </constraints>
+                                <state key="normal" title="B"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCommonButtonTap:" destination="oIO-zt-MfG" eventType="touchUpInside" id="WLT-fV-Oxt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ldn-bZ-UqZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RQL-o1-qDg" secondAttribute="trailing" symbolic="YES" id="8st-bK-scQ"/>
+                            <constraint firstItem="4wE-mf-rdw" firstAttribute="trailing" secondItem="ldn-bZ-UqZ" secondAttribute="trailing" id="FZW-VR-vLs"/>
+                            <constraint firstItem="4wE-mf-rdw" firstAttribute="top" secondItem="C11-kF-vnO" secondAttribute="top" id="IqL-gp-86L"/>
+                            <constraint firstItem="RQL-o1-qDg" firstAttribute="leading" secondItem="ldn-bZ-UqZ" secondAttribute="leading" constant="10" id="JC1-XU-cdA"/>
+                            <constraint firstAttribute="bottom" secondItem="4wE-mf-rdw" secondAttribute="bottom" id="PHV-CZ-nmp"/>
+                            <constraint firstItem="RQL-o1-qDg" firstAttribute="top" secondItem="ldn-bZ-UqZ" secondAttribute="top" id="cTE-50-WVa"/>
+                            <constraint firstItem="4wE-mf-rdw" firstAttribute="leading" secondItem="ldn-bZ-UqZ" secondAttribute="leading" id="fX7-Zg-0MW"/>
+                            <constraint firstItem="ldn-bZ-UqZ" firstAttribute="trailing" secondItem="aW4-1X-UKx" secondAttribute="trailing" constant="10" id="olE-pD-YWT"/>
+                            <constraint firstItem="aW4-1X-UKx" firstAttribute="top" secondItem="ldn-bZ-UqZ" secondAttribute="top" constant="10" id="z3B-TB-c5H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ldn-bZ-UqZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d8i-fb-E98"/>
+                    <connections>
+                        <outlet property="backButton" destination="RQL-o1-qDg" id="lXM-9j-dGJ"/>
+                        <outlet property="btnShare" destination="aW4-1X-UKx" id="7xD-pc-Paz"/>
+                        <outlet property="imageView" destination="4wE-mf-rdw" id="Osg-Gw-JUw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADO-KD-SL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3109" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XQB-G2-lEt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0BD-sR-RHY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bWc-Zs-fgb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="chI-Ki-wgb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kM3-XD-GrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="34495e">
+            <color red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="d35400">
+            <color red="0.82745098039215681" green="0.32941176470588235" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
